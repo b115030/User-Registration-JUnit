@@ -2,7 +2,7 @@ package com.bridgelabz;
 
 public class UserRegistration {
     private static final String NAME ="^[A-Z][a-z]{2,}$";
-    private static final String EMAIL = "^[a-zA-Z0-9.+_-]+[@][a-zA-Z0-9]+[.]co(m|.in)$";
+    private static final String EMAIL =  "^[a-zA-Z0-9|_|-][a-zA-Z0-9|_|-|\\+]*(\\.)?[a-zA-Z0-9|_|-]{1,}\\@[0-9a-zA-Z]{1,}\\.[a-zA-Z]{2,}(\\.)?[a-zA-Z]*$";
     private static final String PHONE = "^[0-9]{2}[0-9]{10}";
     private static final String PASSWORD = "(?=.*[0-9])(?=.*[A-Z])(?=.*[@#$%!]).{8,40}";
 
